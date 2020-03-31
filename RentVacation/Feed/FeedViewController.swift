@@ -9,11 +9,10 @@
 import UIKit
 import Alamofire
 import RxSwift
-struct Result: Codable {
-    var args: String
-    var headers: String
-    var origin: String
-    var url: String
+struct Home: Codable {
+    var title: String
+    var description: String
+    var images: String
 }
 
 class FeedViewController: UIViewController {
@@ -33,9 +32,9 @@ class FeedViewController: UIViewController {
                                 forCellWithReuseIdentifier: "feedCell")
         
         let request = RequestService();
-        let url = URL(string: "https://httpbin.org/get")
+        let url = URL(string: "http://localhost:4000/home/my-id")
         let urlR = URLRequest(url: url!);
-        let subscription: Observable<Result> = request.get(urlR).observeOn(MainScheduler.instance);
+        let subscription: Observable<Home> = request.get(urlR).observeOn(MainScheduler.instance);
         let _ = subscription.subscribe {event in
             debugPrint(event)
         }
