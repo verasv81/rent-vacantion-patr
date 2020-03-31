@@ -3,18 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		DA5B509B23FA8F4B0033325E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B509A23FA8F4B0033325E /* AppDelegate.swift */; };
 		DA5B509D23FA8F4B0033325E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B509C23FA8F4B0033325E /* SceneDelegate.swift */; };
-		DA5B509F23FA8F4B0033325E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B509E23FA8F4B0033325E /* ViewController.swift */; };
 		DA5B50A223FA8F4B0033325E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA5B50A023FA8F4B0033325E /* Main.storyboard */; };
 		DA5B50A423FA8F4F0033325E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA5B50A323FA8F4F0033325E /* Assets.xcassets */; };
 		DA5B50A723FA8F4F0033325E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA5B50A523FA8F4F0033325E /* LaunchScreen.storyboard */; };
 		DA5B50B223FA8F4F0033325E /* RentVacationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B50B123FA8F4F0033325E /* RentVacationTests.swift */; };
 		DA5B50BD23FA8F4F0033325E /* RentVacationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B50BC23FA8F4F0033325E /* RentVacationUITests.swift */; };
+		DA5B50CB23FA90E40033325E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B50CA23FA90E40033325E /* FeedViewController.swift */; };
+		DA68FFAF242612F100C6873A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DA68FFAE242612F100C6873A /* Alamofire */; };
+		DAA40757242E00D7007B8EAD /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = DAA40756242E00D7007B8EAD /* ApolloWebSocket */; };
+		DAA40759242E00D7007B8EAD /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = DAA40758242E00D7007B8EAD /* Apollo */; };
+		DAA4075B242E00D7007B8EAD /* ApolloCodegenLib in Frameworks */ = {isa = PBXBuildFile; productRef = DAA4075A242E00D7007B8EAD /* ApolloCodegenLib */; };
+		DAA4075E242E7A13007B8EAD /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4075D242E7A13007B8EAD /* Request.swift */; };
+		DAA40761242E7CD0007B8EAD /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DAA40760242E7CD0007B8EAD /* RxSwift */; };
+		DAC5615923FE62B900E35D78 /* ChatListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC5615823FE62B900E35D78 /* ChatListCell.xib */; };
+		DAC5615D23FE65CA00E35D78 /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC5615C23FE65CA00E35D78 /* ChatListViewController.swift */; };
+		DAC5616123FE677E00E35D78 /* ChatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC5616023FE677E00E35D78 /* ChatListCell.swift */; };
+		DAC5616323FE6B1C00E35D78 /* ChatListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC5616223FE6B1C00E35D78 /* ChatListModel.swift */; };
+		DACFC5A0240825F60012B70B /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DACFC59F240825F60012B70B /* ImageCell.xib */; };
+		DACFC5A2240827FA0012B70B /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACFC5A1240827FA0012B70B /* ImageCell.swift */; };
+		DACFC5A524082B8D0012B70B /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACFC5A424082B8D0012B70B /* CommentCell.swift */; };
+		DACFC5A724082C430012B70B /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACFC5A624082C430012B70B /* CommentModel.swift */; };
+		DACFC5A924082D0E0012B70B /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACFC5A824082D0E0012B70B /* CommentViewController.swift */; };
+		DACFC5AB24082EB10012B70B /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACFC5AA24082EB10012B70B /* ImageViewController.swift */; };
+		DAD1AC3B240722D30016FEF7 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD1AC3A240722D30016FEF7 /* MessageCell.xib */; };
+		DAD1AC3D240724470016FEF7 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD1AC3C240724470016FEF7 /* MessageCell.swift */; };
+		DAD1AC3F240724EA0016FEF7 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD1AC3E240724EA0016FEF7 /* MessageModel.swift */; };
+		DAD1AC45240729DC0016FEF7 /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD1AC44240729DC0016FEF7 /* FeedCell.xib */; };
+		DAD1AC492407A5630016FEF7 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD1AC482407A5630016FEF7 /* FeedCell.swift */; };
+		DAD1AC4B2407A5740016FEF7 /* FeedCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD1AC4A2407A5740016FEF7 /* FeedCellModel.swift */; };
+		DAD1AC4D2407A74E0016FEF7 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAD1AC4C2407A74E0016FEF7 /* CommentCell.xib */; };
+		DADCEA4A2405B69400134A6C /* plant.png in Resources */ = {isa = PBXBuildFile; fileRef = DADCEA492405B69400134A6C /* plant.png */; };
+		DADCEA4D240653DD00134A6C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADCEA4C240653DD00134A6C /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +63,6 @@
 		DA5B509723FA8F4B0033325E /* RentVacation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentVacation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA5B509A23FA8F4B0033325E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA5B509C23FA8F4B0033325E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DA5B509E23FA8F4B0033325E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA5B50A123FA8F4B0033325E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA5B50A323FA8F4F0033325E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA5B50A623FA8F4F0033325E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +73,27 @@
 		DA5B50B823FA8F4F0033325E /* RentVacationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RentVacationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA5B50BC23FA8F4F0033325E /* RentVacationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentVacationUITests.swift; sourceTree = "<group>"; };
 		DA5B50BE23FA8F4F0033325E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA5B50CA23FA90E40033325E /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		DAA4075D242E7A13007B8EAD /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		DAC5615823FE62B900E35D78 /* ChatListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatListCell.xib; sourceTree = "<group>"; };
+		DAC5615C23FE65CA00E35D78 /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		DAC5616023FE677E00E35D78 /* ChatListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListCell.swift; sourceTree = "<group>"; };
+		DAC5616223FE6B1C00E35D78 /* ChatListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListModel.swift; sourceTree = "<group>"; };
+		DACFC59F240825F60012B70B /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		DACFC5A1240827FA0012B70B /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		DACFC5A424082B8D0012B70B /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		DACFC5A624082C430012B70B /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		DACFC5A824082D0E0012B70B /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		DACFC5AA24082EB10012B70B /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		DAD1AC3A240722D30016FEF7 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		DAD1AC3C240724470016FEF7 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		DAD1AC3E240724EA0016FEF7 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		DAD1AC44240729DC0016FEF7 /* FeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
+		DAD1AC482407A5630016FEF7 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		DAD1AC4A2407A5740016FEF7 /* FeedCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellModel.swift; sourceTree = "<group>"; };
+		DAD1AC4C2407A74E0016FEF7 /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		DADCEA492405B69400134A6C /* plant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plant.png; path = ../../../Downloads/plant.png; sourceTree = "<group>"; };
+		DADCEA4C240653DD00134A6C /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +101,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA68FFAF242612F100C6873A /* Alamofire in Frameworks */,
+				DAA40759242E00D7007B8EAD /* Apollo in Frameworks */,
+				DAA40761242E7CD0007B8EAD /* RxSwift in Frameworks */,
+				DAA40757242E00D7007B8EAD /* ApolloWebSocket in Frameworks */,
+				DAA4075B242E00D7007B8EAD /* ApolloCodegenLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +129,10 @@
 		DA5B508E23FA8F4B0033325E = {
 			isa = PBXGroup;
 			children = (
+				DA5B509823FA8F4B0033325E /* Products */,
 				DA5B509923FA8F4B0033325E /* RentVacation */,
 				DA5B50B023FA8F4F0033325E /* RentVacationTests */,
 				DA5B50BB23FA8F4F0033325E /* RentVacationUITests */,
-				DA5B509823FA8F4B0033325E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +149,16 @@
 		DA5B509923FA8F4B0033325E /* RentVacation */ = {
 			isa = PBXGroup;
 			children = (
+				DAA4075C242E79FB007B8EAD /* Services */,
 				DA5B509A23FA8F4B0033325E /* AppDelegate.swift */,
-				DA5B509C23FA8F4B0033325E /* SceneDelegate.swift */,
-				DA5B509E23FA8F4B0033325E /* ViewController.swift */,
-				DA5B50A023FA8F4B0033325E /* Main.storyboard */,
 				DA5B50A323FA8F4F0033325E /* Assets.xcassets */,
-				DA5B50A523FA8F4F0033325E /* LaunchScreen.storyboard */,
+				DADCEA4B240653B400134A6C /* Chat */,
+				DAC5615F23FE673D00E35D78 /* ChatList */,
+				DAC5615E23FE673500E35D78 /* Feed */,
 				DA5B50A823FA8F4F0033325E /* Info.plist */,
+				DA5B50A523FA8F4F0033325E /* LaunchScreen.storyboard */,
+				DADCEA492405B69400134A6C /* plant.png */,
+				DA5B509C23FA8F4B0033325E /* SceneDelegate.swift */,
 			);
 			path = RentVacation;
 			sourceTree = "<group>";
@@ -128,6 +181,71 @@
 			path = RentVacationUITests;
 			sourceTree = "<group>";
 		};
+		DAA4075C242E79FB007B8EAD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DAA4075D242E7A13007B8EAD /* Request.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DAC5615E23FE673500E35D78 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				DACFC5A324082B790012B70B /* Comments */,
+				DACFC59E240825D50012B70B /* ImageSlider */,
+				DA5B50CA23FA90E40033325E /* FeedViewController.swift */,
+				DAD1AC44240729DC0016FEF7 /* FeedCell.xib */,
+				DAD1AC482407A5630016FEF7 /* FeedCell.swift */,
+				DAD1AC4A2407A5740016FEF7 /* FeedCellModel.swift */,
+				DA5B50A023FA8F4B0033325E /* Main.storyboard */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		DAC5615F23FE673D00E35D78 /* ChatList */ = {
+			isa = PBXGroup;
+			children = (
+				DAC5615823FE62B900E35D78 /* ChatListCell.xib */,
+				DAC5615C23FE65CA00E35D78 /* ChatListViewController.swift */,
+				DAC5616023FE677E00E35D78 /* ChatListCell.swift */,
+				DAC5616223FE6B1C00E35D78 /* ChatListModel.swift */,
+			);
+			path = ChatList;
+			sourceTree = "<group>";
+		};
+		DACFC59E240825D50012B70B /* ImageSlider */ = {
+			isa = PBXGroup;
+			children = (
+				DACFC59F240825F60012B70B /* ImageCell.xib */,
+				DACFC5A1240827FA0012B70B /* ImageCell.swift */,
+				DACFC5AA24082EB10012B70B /* ImageViewController.swift */,
+			);
+			path = ImageSlider;
+			sourceTree = "<group>";
+		};
+		DACFC5A324082B790012B70B /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				DAD1AC4C2407A74E0016FEF7 /* CommentCell.xib */,
+				DACFC5A424082B8D0012B70B /* CommentCell.swift */,
+				DACFC5A624082C430012B70B /* CommentModel.swift */,
+				DACFC5A824082D0E0012B70B /* CommentViewController.swift */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		DADCEA4B240653B400134A6C /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				DADCEA4C240653DD00134A6C /* ChatViewController.swift */,
+				DAD1AC3A240722D30016FEF7 /* MessageCell.xib */,
+				DAD1AC3C240724470016FEF7 /* MessageCell.swift */,
+				DAD1AC3E240724EA0016FEF7 /* MessageModel.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +262,13 @@
 			dependencies = (
 			);
 			name = RentVacation;
+			packageProductDependencies = (
+				DA68FFAE242612F100C6873A /* Alamofire */,
+				DAA40756242E00D7007B8EAD /* ApolloWebSocket */,
+				DAA40758242E00D7007B8EAD /* Apollo */,
+				DAA4075A242E00D7007B8EAD /* ApolloCodegenLib */,
+				DAA40760242E7CD0007B8EAD /* RxSwift */,
+			);
 			productName = RentVacation;
 			productReference = DA5B509723FA8F4B0033325E /* RentVacation.app */;
 			productType = "com.apple.product-type.application";
@@ -216,6 +341,11 @@
 				Base,
 			);
 			mainGroup = DA5B508E23FA8F4B0033325E;
+			packageReferences = (
+				DA68FFAD242612F100C6873A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				DAA40755242E00D7007B8EAD /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				DAA4075F242E7CD0007B8EAD /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = DA5B509823FA8F4B0033325E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,9 +362,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD1AC4D2407A74E0016FEF7 /* CommentCell.xib in Resources */,
 				DA5B50A723FA8F4F0033325E /* LaunchScreen.storyboard in Resources */,
+				DAC5615923FE62B900E35D78 /* ChatListCell.xib in Resources */,
 				DA5B50A423FA8F4F0033325E /* Assets.xcassets in Resources */,
+				DAD1AC3B240722D30016FEF7 /* MessageCell.xib in Resources */,
 				DA5B50A223FA8F4B0033325E /* Main.storyboard in Resources */,
+				DACFC5A0240825F60012B70B /* ImageCell.xib in Resources */,
+				DADCEA4A2405B69400134A6C /* plant.png in Resources */,
+				DAD1AC45240729DC0016FEF7 /* FeedCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +395,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA5B509F23FA8F4B0033325E /* ViewController.swift in Sources */,
+				DACFC5A524082B8D0012B70B /* CommentCell.swift in Sources */,
 				DA5B509B23FA8F4B0033325E /* AppDelegate.swift in Sources */,
+				DAD1AC492407A5630016FEF7 /* FeedCell.swift in Sources */,
+				DAC5616323FE6B1C00E35D78 /* ChatListModel.swift in Sources */,
+				DADCEA4D240653DD00134A6C /* ChatViewController.swift in Sources */,
+				DACFC5A924082D0E0012B70B /* CommentViewController.swift in Sources */,
+				DACFC5AB24082EB10012B70B /* ImageViewController.swift in Sources */,
+				DAA4075E242E7A13007B8EAD /* Request.swift in Sources */,
+				DA5B50CB23FA90E40033325E /* FeedViewController.swift in Sources */,
+				DACFC5A2240827FA0012B70B /* ImageCell.swift in Sources */,
+				DAD1AC3F240724EA0016FEF7 /* MessageModel.swift in Sources */,
+				DAC5616123FE677E00E35D78 /* ChatListCell.swift in Sources */,
+				DAD1AC4B2407A5740016FEF7 /* FeedCellModel.swift in Sources */,
 				DA5B509D23FA8F4B0033325E /* SceneDelegate.swift in Sources */,
+				DACFC5A724082C430012B70B /* CommentModel.swift in Sources */,
+				DAC5615D23FE65CA00E35D78 /* ChatListViewController.swift in Sources */,
+				DAD1AC3D240724470016FEF7 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +734,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA68FFAD242612F100C6873A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.4;
+			};
+		};
+		DAA40755242E00D7007B8EAD /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.24.0;
+			};
+		};
+		DAA4075F242E7CD0007B8EAD /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA68FFAE242612F100C6873A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA68FFAD242612F100C6873A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		DAA40756242E00D7007B8EAD /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAA40755242E00D7007B8EAD /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+		DAA40758242E00D7007B8EAD /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAA40755242E00D7007B8EAD /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		DAA4075A242E00D7007B8EAD /* ApolloCodegenLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAA40755242E00D7007B8EAD /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloCodegenLib;
+		};
+		DAA40760242E7CD0007B8EAD /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAA4075F242E7CD0007B8EAD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA5B508F23FA8F4B0033325E /* Project object */;
 }
