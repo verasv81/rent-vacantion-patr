@@ -155,17 +155,17 @@
             </objects>
             <point key="canvasLocation" x="-543" y="192"/>
         </scene>
-        <!--Settings-->
+        <!--Account-->
         <scene sceneID="huw-Ew-J6R">
             <objects>
-                <viewController id="pNK-Vp-DpL" sceneMemberID="viewController">
+                <viewController id="pNK-Vp-DpL" customClass="AccountViewController" customModule="RentVacation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cfl-9a-vrm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="SLa-Lc-DJj"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="slider.horizontal.3" catalog="system" landscapeImage="slider.horizontal.3" largeContentSizeImage="slider.horizontal.3" selectedImage="slider.horizontal.3" id="za2-u0-39G"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="person" catalog="system" landscapeImage="person" largeContentSizeImage="person" selectedImage="person" id="za2-u0-39G"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bMz-WC-m8o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -194,8 +194,8 @@
     <resources>
         <image name="arrow.2.circlepath" catalog="system" width="64" height="50"/>
         <image name="message" catalog="system" width="64" height="56"/>
+        <image name="person" catalog="system" width="64" height="58"/>
         <image name="plus.circle" catalog="system" width="64" height="60"/>
-        <image name="slider.horizontal.3" catalog="system" width="64" height="50"/>
         <image name="square.on.square" catalog="system" width="64" height="56"/>
     </resources>
 </document>

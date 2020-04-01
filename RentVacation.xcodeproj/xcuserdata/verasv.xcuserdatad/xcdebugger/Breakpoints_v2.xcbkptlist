@@ -164,5 +164,84 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C0719D69-C2D5-40FB-8792-243F25C3EDEC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RentVacation/Account/Account.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72969495-EC2E-4F64-8978-4E6FCCC3C350"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RentVacation/Account/Account.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "getUser(id:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "72969495-EC2E-4F64-8978-4E6FCCC3C350 - a89ac518d2279aeb"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RxSwift.Event&lt;RentVacation.User&gt;) -&gt; () in RentVacation.AccountViewController.getUser() -&gt; ()"
+                  moduleName = "RentVacation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/verasv/Desktop/RentVacation/RentVacation/Account/Account.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "72969495-EC2E-4F64-8978-4E6FCCC3C350 - a89ac518d2279aeb"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RxSwift.Event&lt;RentVacation.User&gt;) -&gt; () in RentVacation.AccountViewController.getUser() -&gt; ()"
+                  moduleName = "RentVacation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/verasv/Desktop/RentVacation/RentVacation/Account/Account.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "125">
+               </Location>
+               <Location
+                  uuid = "72969495-EC2E-4F64-8978-4E6FCCC3C350 - a89ac518d2279aeb"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RxSwift.Event&lt;RentVacation.User&gt;) -&gt; () in RentVacation.AccountViewController.getUser() -&gt; ()"
+                  moduleName = "RentVacation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/verasv/Desktop/RentVacation/RentVacation/Account/Account.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "374">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
