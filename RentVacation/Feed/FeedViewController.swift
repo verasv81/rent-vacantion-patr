@@ -7,41 +7,66 @@
 //
 
 import UIKit
-import Alamofire
 import RxSwift
-struct Result: Codable {
-    var args: String
-    var headers: String
-    var origin: String
-    var url: String
-}
 
 class FeedViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var refreshBtn: UIButton!
+    @IBOutlet weak var addBtn: UIButton!
     
-    let dataSource = Array(repeating: FeedCellModel(description: "Lorem ipsum",
-                                                    image: UIImage(named: "plant.png")!),
-                              count: 30)
-       
+    @IBAction func addHome(_ sender: Any) {
+        self.showModal()
+    }
+    
+    @IBAction func onClick(_ sender: Any) {
+        self.fetchData()
+        self.collectionView.reloadData()
+    }
+    
+    var dataSource: Array<FeedCellModel> = Array()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
         let bundle = Bundle.init(for: FeedCell.self)
         let nib = UINib(nibName: "FeedCell", bundle: bundle)
         collectionView.register(nib,
                                 forCellWithReuseIdentifier: "feedCell")
-        
-        let request = RequestService();
-        let url = URL(string: "https://httpbin.org/get")
-        let urlR = URLRequest(url: url!);
-        let subscription: Observable<Result> = request.get(urlR).observeOn(MainScheduler.instance);
-        let _ = subscription.subscribe {event in
-            debugPrint(event)
-        }
-        
+        fetchData()
     }
-   
+    
+    private func fetchData() {
+        let request = RequestService()
+        let url = URL(string: "http://localhost:4000/homeList")
+        let urlRequest = URLRequest(url: url!);
+        let subscription: Observable<HomeList> = request.get(urlRequest).observeOn(MainScheduler.instance);
+        
+        let _ = subscription.subscribe{ event in
+            var homeList : HomeList;
+            switch event {
+            case .next(let value):
+                homeList = value
+                for element in homeList.list {
+                    let url = URL(string: element.image)
+                    let data = try? Data(contentsOf: url!)
+                    let cell = FeedCellModel(description: element.description, image: UIImage(data: data!) ?? UIImage(imageLiteralResourceName: "plant.png"))
+                    self.dataSource.append(cell)
+                }
+            case .error(let error):
+                print(error)
+            case .completed:
+                self.collectionView.reloadData()
+                print("completed")
+            }
+        }
+    }
+    
+    private func showModal() {
+        let modalViewController = ModalViewController()
+        modalViewController.modalPresentationStyle = .pageSheet
+        present(modalViewController, animated: true, completion: nil)
+    }
 }
 
 extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
