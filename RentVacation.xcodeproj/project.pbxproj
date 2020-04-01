@@ -16,6 +16,9 @@
 		DA5B50BD23FA8F4F0033325E /* RentVacationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B50BC23FA8F4F0033325E /* RentVacationUITests.swift */; };
 		DA5B50CB23FA90E40033325E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B50CA23FA90E40033325E /* FeedViewController.swift */; };
 		DA68FFAF242612F100C6873A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DA68FFAE242612F100C6873A /* Alamofire */; };
+		DA8C7EC02435053B00BA8537 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = DA8C7EBF2435053B00BA8537 /* loading.gif */; };
+		DA8C7EC424351B6D00BA8537 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C7EC324351B6D00BA8537 /* HomeModel.swift */; };
+		DA8C7EC62435202200BA8537 /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C7EC52435202200BA8537 /* Modal.swift */; };
 		DAA40757242E00D7007B8EAD /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = DAA40756242E00D7007B8EAD /* ApolloWebSocket */; };
 		DAA40759242E00D7007B8EAD /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = DAA40758242E00D7007B8EAD /* Apollo */; };
 		DAA4075B242E00D7007B8EAD /* ApolloCodegenLib in Frameworks */ = {isa = PBXBuildFile; productRef = DAA4075A242E00D7007B8EAD /* ApolloCodegenLib */; };
@@ -74,6 +77,9 @@
 		DA5B50BC23FA8F4F0033325E /* RentVacationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentVacationUITests.swift; sourceTree = "<group>"; };
 		DA5B50BE23FA8F4F0033325E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA5B50CA23FA90E40033325E /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		DA8C7EBF2435053B00BA8537 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = loading.gif; path = ../../../Downloads/loading.gif; sourceTree = "<group>"; };
+		DA8C7EC324351B6D00BA8537 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		DA8C7EC52435202200BA8537 /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
 		DAA4075D242E7A13007B8EAD /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		DAC5615823FE62B900E35D78 /* ChatListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatListCell.xib; sourceTree = "<group>"; };
 		DAC5615C23FE65CA00E35D78 /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +163,7 @@
 				DAC5615E23FE673500E35D78 /* Feed */,
 				DA5B50A823FA8F4F0033325E /* Info.plist */,
 				DA5B50A523FA8F4F0033325E /* LaunchScreen.storyboard */,
+				DA8C7EBF2435053B00BA8537 /* loading.gif */,
 				DADCEA492405B69400134A6C /* plant.png */,
 				DA5B509C23FA8F4B0033325E /* SceneDelegate.swift */,
 			);
@@ -199,6 +206,8 @@
 				DAD1AC482407A5630016FEF7 /* FeedCell.swift */,
 				DAD1AC4A2407A5740016FEF7 /* FeedCellModel.swift */,
 				DA5B50A023FA8F4B0033325E /* Main.storyboard */,
+				DA8C7EC324351B6D00BA8537 /* HomeModel.swift */,
+				DA8C7EC52435202200BA8537 /* Modal.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -369,6 +378,7 @@
 				DAD1AC3B240722D30016FEF7 /* MessageCell.xib in Resources */,
 				DA5B50A223FA8F4B0033325E /* Main.storyboard in Resources */,
 				DACFC5A0240825F60012B70B /* ImageCell.xib in Resources */,
+				DA8C7EC02435053B00BA8537 /* loading.gif in Resources */,
 				DADCEA4A2405B69400134A6C /* plant.png in Resources */,
 				DAD1AC45240729DC0016FEF7 /* FeedCell.xib in Resources */,
 			);
@@ -397,6 +407,7 @@
 			files = (
 				DACFC5A524082B8D0012B70B /* CommentCell.swift in Sources */,
 				DA5B509B23FA8F4B0033325E /* AppDelegate.swift in Sources */,
+				DA8C7EC424351B6D00BA8537 /* HomeModel.swift in Sources */,
 				DAD1AC492407A5630016FEF7 /* FeedCell.swift in Sources */,
 				DAC5616323FE6B1C00E35D78 /* ChatListModel.swift in Sources */,
 				DADCEA4D240653DD00134A6C /* ChatViewController.swift in Sources */,
@@ -408,6 +419,7 @@
 				DAD1AC3F240724EA0016FEF7 /* MessageModel.swift in Sources */,
 				DAC5616123FE677E00E35D78 /* ChatListCell.swift in Sources */,
 				DAD1AC4B2407A5740016FEF7 /* FeedCellModel.swift in Sources */,
+				DA8C7EC62435202200BA8537 /* Modal.swift in Sources */,
 				DA5B509D23FA8F4B0033325E /* SceneDelegate.swift in Sources */,
 				DACFC5A724082C430012B70B /* CommentModel.swift in Sources */,
 				DAC5615D23FE65CA00E35D78 /* ChatListViewController.swift in Sources */,
