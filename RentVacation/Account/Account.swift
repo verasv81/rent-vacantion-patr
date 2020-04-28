@@ -17,7 +17,7 @@ class AccountViewController: UIViewController {
     let passwordTextField = UITextField(frame: CGRect(x: 50, y:180, width: 200, height:40))
     let signUpBtn = UIButton(frame: CGRect(x: 50, y: 260, width: 90, height: 40))
     let loginBtn = UIButton(frame: CGRect(x: 180, y: 260, width: 90, height: 40))
-    let avatar = UIImage(named: "plant.png")
+    let avatar = UIImage(named: "account.png")
     let nameLabel = UILabel(frame: CGRect(x: 180, y: 310, width: 80, height: 40))
     
     

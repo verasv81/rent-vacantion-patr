@@ -24,7 +24,7 @@ class FeedViewController: UIViewController {
         self.collectionView.reloadData()
     }
     
-    var dataSource: Array<FeedCellModel> = Array()
+    var dataSource: Array<FeedCellInteractor> = Array()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +50,7 @@ class FeedViewController: UIViewController {
                 for element in homeList.list {
                     let url = URL(string: element.image)
                     let data = try? Data(contentsOf: url!)
-                    let cell = FeedCellModel(description: element.description, image: UIImage(data: data!) ?? UIImage(imageLiteralResourceName: "plant.png"))
+                    let cell = FeedCellInteractor(description: element.description, image: UIImage(data: data!) ?? UIImage(imageLiteralResourceName: "account.png"))
                     self.dataSource.append(cell)
                 }
             case .error(let error):

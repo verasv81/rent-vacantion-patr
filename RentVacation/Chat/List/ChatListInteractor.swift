@@ -6,7 +6,7 @@
 //  Copyright © 2020 Vera Svet. All rights reserved.
 //
 
-final class ChatListModel {
+final class ChatListInteractor {
     let author: String
     let message: String
     let avatarUrl: String

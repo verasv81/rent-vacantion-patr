@@ -1,5 +1,5 @@
 //
-//  FeedCellModel.swift
+//  FeedCellInteractor.swift
 //  RentVacation
 //
 //  Created by Vera Svet on 2/27/20.
@@ -8,8 +8,7 @@
 
 import UIKit
 
-
-final class FeedCellModel {
+final class FeedCellInteractor {
     let description: String
     let image: UIImage
     

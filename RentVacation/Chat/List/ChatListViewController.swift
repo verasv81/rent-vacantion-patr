@@ -12,9 +12,9 @@ final class ChatListViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let dataSource = Array(repeating: ChatListModel(author: "John Doe",
+    let dataSource = Array(repeating: ChatListInteractor(author: "John Doe",
                                                     message: "Hello, I am very happy to see you.",
-                                                    avatarUrl: "plant.png"),
+                                                    avatarUrl: "account.png"),
                            count: 30)
     
     static var identifier: String {

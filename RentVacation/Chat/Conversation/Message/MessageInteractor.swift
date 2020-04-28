@@ -1,5 +1,5 @@
 //
-//  MessageModel.swift
+//  MessageInteractor.swift
 //  RentVacation
 //
 //  Created by Vera Svet on 2/27/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class MessageModel {
+final class MessageInteractor {
     let author: String
     let message: String
     
