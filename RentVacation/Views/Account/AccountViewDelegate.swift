@@ -10,6 +10,4 @@ import Foundation
 
 protocol AccountViewDelegate: NSObjectProtocol {
     func displayUser(name:(String))
-    func login(name:(String), password: (String))
-    func signup(name:(String), password: (String))
 }

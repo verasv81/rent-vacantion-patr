@@ -10,7 +10,9 @@ import UIKit
 import RxSwift
 
 
-class AccountViewController: UIViewController {
+class AccountViewController: UIViewController, AccountViewDelegate {
+    private let accountPresenter = AccountPresenter(userService: UserService())
+    
     var isLogged = false;
     let nameTextField = UITextField(frame: CGRect(x: 50, y:100, width: 200, height:40))
     let passwordTextField = UITextField(frame: CGRect(x: 50, y:180, width: 200, height:40))
@@ -21,9 +23,12 @@ class AccountViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        self.accountPresenter.setViewDelegate(accountViewDelegate: self)
+        
         if isLogged {
             self.singUp()
         } else {
+            self.login()
         }
     }
     
@@ -63,11 +68,7 @@ class AccountViewController: UIViewController {
     
     @objc func signUpAction(sender: UIButton!){
         self.clean()
-        
-    }
-    
-    func signup(name: (String), password: (String)) {
-        displayUser(name: name)
+        self.accountPresenter.signup(name: nameTextField.text!, password: passwordTextField.text!)
     }
     
     func displayUser(name: (String)) {
@@ -100,11 +101,13 @@ class AccountViewController: UIViewController {
     @objc func loginAction(sender: UIButton!) {
         self.clean()
         self.login()
-        self.isLogged = true;
+        self.isLogged = true
     }
     
     private func login() {
-
+        self.clean()
+        self.accountPresenter.login(name: nameTextField.text!, password: passwordTextField.text!)
+        self.isLogged = true
     }
     
     private func clean() {
@@ -117,50 +120,23 @@ class AccountViewController: UIViewController {
 
 
 extension AccountViewController: UITextFieldDelegate {
-
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        // return NO to disallow editing.
-        print("TextField should begin editing method called")
         return true
-    }
-
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        // became first responder
-        print("TextField did begin editing method called")
     }
 
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        // return YES to allow editing to stop and to resign first responder status. NO to disallow the editing session to end
-        print("TextField should snd editing method called")
         return true
     }
 
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        // may be called if forced even if shouldEndEditing returns NO (e.g. view removed from window) or endEditing:YES called
-        print("TextField did end editing method called")
-    }
-
-    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
-        // if implemented, called in place of textFieldDidEndEditing:
-        print("TextField did end editing with reason method called")
-    }
-
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        // return NO to not change text
-        print("While entering the characters this method gets called")
         return true
     }
 
     func textFieldShouldClear(_ textField: UITextField) -> Bool {
-        // called when clear button pressed. return NO to ignore (no notifications)
-        print("TextField should clear method called")
         return true
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        // called when 'return' key pressed. return NO to ignore.
-        print("TextField should return method called")
-        // may be useful: textField.resignFirstResponder()
         return true
     }
 

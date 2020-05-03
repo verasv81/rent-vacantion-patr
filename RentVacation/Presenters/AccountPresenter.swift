@@ -21,15 +21,48 @@ class AccountPresenter {
     }
     
     func setUser(id: (String)){
-        let user = self.userService.getUser(id: id)
-        accountViewDelegate?.displayUser(name: user)
+        var name = ""
+        let _ = self.userService.getUser(id: id).subscribe { event in
+            switch event {
+            case .next(let value):
+                name = value.name
+            case .error(let error):
+                print(error)
+            case .completed:
+                self.accountViewDelegate?.displayUser(name: name)
+            }
+        }
     }
     
     func login(name: (String), password: (String)) {
-        self.accountViewDelegate?.login(name: name, password: password)
+        var userName = name
+        var userPassword = password
+        if(userName=="" && userPassword=="") {
+            userPassword = "1234"
+            userName = "Felix"
+        }
+        let _ = self.userService.login(name: userName, password: userPassword).subscribe {event in
+            switch event {
+            case .next(let value):
+                self.setUser(id: value._id!)
+            case .error(let error):
+                print(error)
+            case .completed:
+                print("is logged")
+            }
+        }
     }
     
     func signup(name: (String), password: (String)) {
-        self.accountViewDelegate?.login(name: name, password: password)
+        let _ = self.userService.signup(name: name, password: password).subscribe {event in
+             switch event {
+             case .next(let value):
+                self.setUser(id: value._id!)
+             case .error(let error):
+                 print(error)
+             case .completed:
+                 print("is logged")
+             }
+         }
     }
 }
