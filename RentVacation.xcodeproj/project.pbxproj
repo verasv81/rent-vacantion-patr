@@ -24,8 +24,10 @@
 		DA73EFEA245EB15600E89625 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73EFE9245EB15600E89625 /* MessageModel.swift */; };
 		DA73EFEC245EB3B000E89625 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73EFEB245EB3B000E89625 /* FeedPresenter.swift */; };
 		DA73EFEE245EB46400E89625 /* FeedViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73EFED245EB46400E89625 /* FeedViewDelegate.swift */; };
+		DA73EFF0245EC06800E89625 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73EFEF245EC06800E89625 /* HomePresenter.swift */; };
+		DA73EFF3245EC09C00E89625 /* HomeViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73EFF2245EC09C00E89625 /* HomeViewDelegate.swift */; };
 		DA8C7EC424351B6D00BA8537 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C7EC324351B6D00BA8537 /* HomeModel.swift */; };
-		DA8C7EC62435202200BA8537 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C7EC52435202200BA8537 /* ModalView.swift */; };
+		DA8C7EC62435202200BA8537 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C7EC52435202200BA8537 /* HomeView.swift */; };
 		DA8C7EC924352BFC00BA8537 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C7EC824352BFC00BA8537 /* AccountView.swift */; };
 		DA8C7ECB24352FB600BA8537 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C7ECA24352FB600BA8537 /* UserModel.swift */; };
 		DAA4075E242E7A13007B8EAD /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4075D242E7A13007B8EAD /* Request.swift */; };
@@ -82,8 +84,10 @@
 		DA73EFE9245EB15600E89625 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		DA73EFEB245EB3B000E89625 /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		DA73EFED245EB46400E89625 /* FeedViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewDelegate.swift; sourceTree = "<group>"; };
+		DA73EFEF245EC06800E89625 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		DA73EFF2245EC09C00E89625 /* HomeViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewDelegate.swift; sourceTree = "<group>"; };
 		DA8C7EC324351B6D00BA8537 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
-		DA8C7EC52435202200BA8537 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		DA8C7EC52435202200BA8537 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DA8C7EC824352BFC00BA8537 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		DA8C7ECA24352FB600BA8537 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		DAA4075D242E7A13007B8EAD /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
@@ -227,7 +231,6 @@
 				DA73EFE6245EACBC00E89625 /* Account */,
 				DA73EFE4245EAC8D00E89625 /* Chat */,
 				DA73EFE3245EAC5300E89625 /* Feed */,
-				DA8C7EC52435202200BA8537 /* ModalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			children = (
 				DA73EFDA245DF6E100E89625 /* AccountPresenter.swift */,
 				DA73EFEB245EB3B000E89625 /* FeedPresenter.swift */,
+				DA73EFEF245EC06800E89625 /* HomePresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -244,6 +248,7 @@
 		DA73EFE3245EAC5300E89625 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				DA73EFF1245EC07300E89625 /* Home */,
 				DA5B50CA23FA90E40033325E /* FeedViewController.swift */,
 				DA73EFED245EB46400E89625 /* FeedViewDelegate.swift */,
 				DA4E427B2458A3A900DD53CD /* FeedItem */,
@@ -277,6 +282,15 @@
 				DA73EFDE245DF90400E89625 /* AccountViewDelegate.swift */,
 			);
 			path = Account;
+			sourceTree = "<group>";
+		};
+		DA73EFF1245EC07300E89625 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DA8C7EC52435202200BA8537 /* HomeView.swift */,
+				DA73EFF2245EC09C00E89625 /* HomeViewDelegate.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		DAA4075C242E79FB007B8EAD /* Services */ = {
@@ -435,11 +449,13 @@
 			files = (
 				DA8C7ECB24352FB600BA8537 /* UserModel.swift in Sources */,
 				DA5B509B23FA8F4B0033325E /* AppDelegate.swift in Sources */,
+				DA73EFF0245EC06800E89625 /* HomePresenter.swift in Sources */,
 				DA8C7EC424351B6D00BA8537 /* HomeModel.swift in Sources */,
 				DA73EFEE245EB46400E89625 /* FeedViewDelegate.swift in Sources */,
 				DAD1AC492407A5630016FEF7 /* FeedCell.swift in Sources */,
 				DAC5616323FE6B1C00E35D78 /* ChatListModel.swift in Sources */,
 				DA73EFDB245DF6E100E89625 /* AccountPresenter.swift in Sources */,
+				DA73EFF3245EC09C00E89625 /* HomeViewDelegate.swift in Sources */,
 				DA8C7EC924352BFC00BA8537 /* AccountView.swift in Sources */,
 				DADCEA4D240653DD00134A6C /* ChatViewController.swift in Sources */,
 				DAA4075E242E7A13007B8EAD /* Request.swift in Sources */,
@@ -448,7 +464,7 @@
 				DAC5616123FE677E00E35D78 /* ChatListCell.swift in Sources */,
 				DA73EFDD245DF70C00E89625 /* UserService.swift in Sources */,
 				DAD1AC4B2407A5740016FEF7 /* FeedCellModel.swift in Sources */,
-				DA8C7EC62435202200BA8537 /* ModalView.swift in Sources */,
+				DA8C7EC62435202200BA8537 /* HomeView.swift in Sources */,
 				DA73EFEA245EB15600E89625 /* MessageModel.swift in Sources */,
 				DA5B509D23FA8F4B0033325E /* SceneDelegate.swift in Sources */,
 				DAC5615D23FE65CA00E35D78 /* ChatListViewController.swift in Sources */,

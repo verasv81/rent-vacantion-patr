@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import RxSwift
 
 class FeedViewController: UIViewController, FeedViewDelegate {
     private let feedPresenter = FeedPresenter(feedService: FeedService())
@@ -44,7 +43,7 @@ class FeedViewController: UIViewController, FeedViewDelegate {
     }
     
     private func showModal() {
-        let modalViewController = ModalViewController()
+        let modalViewController = HomeViewController()
         modalViewController.modalPresentationStyle = .pageSheet
         present(modalViewController, animated: true, completion: nil)
     }
