@@ -11,7 +11,6 @@ import RxSwift
 
 
 class AccountViewController: UIViewController {
-    let request = RequestService()
     var isLogged = false;
     let nameTextField = UITextField(frame: CGRect(x: 50, y:100, width: 200, height:40))
     let passwordTextField = UITextField(frame: CGRect(x: 50, y:180, width: 200, height:40))
@@ -25,7 +24,6 @@ class AccountViewController: UIViewController {
         if isLogged {
             self.singUp()
         } else {
-            self.getUser()
         }
     }
     
@@ -65,53 +63,30 @@ class AccountViewController: UIViewController {
     
     @objc func signUpAction(sender: UIButton!){
         self.clean()
-        let home = User(name: nameTextField.text!, password: passwordTextField.text!)
-        let subscription1: Observable<User> = request.post("http://localhost:4000/user", parameters: home).observeOn(MainScheduler.instance);
-        let _ = subscription1.subscribe {event in
-            switch event {
-            case .next(let value):
-                self.getUser(id: value._id)
-                print(value)
-            case .error(let error):
-                print(error)
-            case .completed:
-                self.isLogged = true
-                
-            }
-        }
+        
     }
     
-    private func getUser(id: String? = "5e84fa631c9d440000e0a2c8") {
+    func signup(name: (String), password: (String)) {
+        displayUser(name: name)
+    }
+    
+    func displayUser(name: (String)) {
         self.clean()
-        let basePath = "http://localhost:4000/user/" + id!;
-        let url = URL(string: basePath)
-        let urlRequest = URLRequest(url: url!);
-        let subscription2: Observable<User> = request.get(urlRequest).observeOn(MainScheduler.instance);
-        
-        let _ = subscription2.subscribe{ event in
-            switch event {
-            case .next(let value):
-                self.nameLabel.text = value.name
-                self.nameLabel.font = UIFont.systemFont(ofSize: 25)
-            case .error(let error):
-                print(error)
-            case .completed:
-                print("completed")
-                self.view.addSubview(self.nameLabel)
-                let avatarImage = UIImageView(frame: CGRect(x: 110, y: 100, width: 200, height: 200))
-                avatarImage.image = self.avatar
-                self.view.addSubview(avatarImage)
-                let welcomeMessage = UILabel(frame: CGRect(x: 40, y: 380, width: 300, height: 200))
-                welcomeMessage.numberOfLines = 10
-                welcomeMessage.text = "Welcome to our awsome app, this app will help you to rent home, blablabla"
-                self.view.addSubview(welcomeMessage)
-                let logOutBtn = UIButton(frame: CGRect(x: 130, y:520, width: 90, height: 40))
-                logOutBtn.setTitle("Logout", for: .normal)
-                logOutBtn.backgroundColor = UIColor.systemGray
-                logOutBtn.addTarget(self, action: #selector(self.logOutAction), for: .touchUpInside)
-                self.view.addSubview(logOutBtn)
-            }
-        }
+        self.nameLabel.text = name
+        self.nameLabel.font = UIFont.systemFont(ofSize: 25)
+        self.view.addSubview(self.nameLabel)
+        let avatarImage = UIImageView(frame: CGRect(x: 110, y: 100, width: 200, height: 200))
+        avatarImage.image = self.avatar
+        self.view.addSubview(avatarImage)
+        let welcomeMessage = UILabel(frame: CGRect(x: 40, y: 380, width: 300, height: 200))
+        welcomeMessage.numberOfLines = 10
+        welcomeMessage.text = "Welcome to our awsome app, this app will help you to rent home, blablabla"
+        self.view.addSubview(welcomeMessage)
+        let logOutBtn = UIButton(frame: CGRect(x: 130, y:520, width: 90, height: 40))
+        logOutBtn.setTitle("Logout", for: .normal)
+        logOutBtn.backgroundColor = UIColor.systemGray
+        logOutBtn.addTarget(self, action: #selector(self.logOutAction), for: .touchUpInside)
+        self.view.addSubview(logOutBtn)
     }
     
     @objc func logOutAction(sender: UIButton!) {
@@ -129,19 +104,7 @@ class AccountViewController: UIViewController {
     }
     
     private func login() {
-        let home = User(name: nameTextField.text!, password: passwordTextField.text!)
-        let subscription1: Observable<User> = request.post("http://localhost:4000/user/login", parameters: home).observeOn(MainScheduler.instance);
-        let _ = subscription1.subscribe {event in
-            switch event {
-            case .next(let value):
-                self.getUser(id: value._id)
-                print(value)
-            case .error(let error):
-                print(error)
-            case .completed:
-                self.isLogged = true
-            }
-        }
+
     }
     
     private func clean() {

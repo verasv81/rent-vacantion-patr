@@ -12,7 +12,7 @@ import UIKit
 final class ChatViewController: UIViewController {
     
 
-    let dataSource = Array(repeating: MessageInteractor(author: "John Doe",
+    let dataSource = Array(repeating: MessageModel(author: "John Doe",
                                                     message: "Hello there"),
                            count: 10)
     

@@ -9,57 +9,38 @@
 import UIKit
 import RxSwift
 
-class FeedViewController: UIViewController {
-
+class FeedViewController: UIViewController, FeedViewDelegate {
+    private let feedPresenter = FeedPresenter(feedService: FeedService())
+    var dataSource: Array<FeedCellModel> = Array()
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var refreshBtn: UIButton!
     @IBOutlet weak var addBtn: UIButton!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.feedPresenter.setViewDelegate(feedViewDelegate: self)
+        
+        let bundle = Bundle.init(for: FeedCell.self)
+        let nib = UINib(nibName: "FeedCell", bundle: bundle)
+        collectionView.register(nib,
+                                forCellWithReuseIdentifier: "feedCell")
+        self.feedPresenter.feedDataFetch()
+    }
+    
+    func displayFeed(dataSource: ([FeedCellModel])) {
+        self.dataSource = dataSource
+        self.collectionView.reloadData()
+    }
     
     @IBAction func addHome(_ sender: Any) {
         self.showModal()
     }
     
     @IBAction func onClick(_ sender: Any) {
-        self.fetchData()
+        self.feedPresenter.feedDataFetch()
         self.collectionView.reloadData()
-    }
-    
-    var dataSource: Array<FeedCellInteractor> = Array()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let bundle = Bundle.init(for: FeedCell.self)
-        let nib = UINib(nibName: "FeedCell", bundle: bundle)
-        collectionView.register(nib,
-                                forCellWithReuseIdentifier: "feedCell")
-        fetchData()
-    }
-    
-    private func fetchData() {
-        let request = RequestService()
-        let url = URL(string: "http://localhost:4000/homeList")
-        let urlRequest = URLRequest(url: url!);
-        let subscription: Observable<HomeList> = request.get(urlRequest).observeOn(MainScheduler.instance);
-        
-        let _ = subscription.subscribe{ event in
-            var homeList : HomeList;
-            switch event {
-            case .next(let value):
-                homeList = value
-                for element in homeList.list {
-                    let url = URL(string: element.image)
-                    let data = try? Data(contentsOf: url!)
-                    let cell = FeedCellInteractor(description: element.description, image: UIImage(data: data!) ?? UIImage(imageLiteralResourceName: "account.png"))
-                    self.dataSource.append(cell)
-                }
-            case .error(let error):
-                print(error)
-            case .completed:
-                self.collectionView.reloadData()
-                print("completed")
-            }
-        }
     }
     
     private func showModal() {
@@ -79,7 +60,9 @@ extension FeedViewController: UICollectionViewDataSource, UICollectionViewDelega
         guard let chatListCell = cell as? FeedCell else { return UICollectionViewCell() }
         
         chatListCell.descriptionLabel.text = dataSource[indexPath.row].description
-        chatListCell.imageView.image = dataSource[indexPath.row].image
+        let url = URL(string: dataSource[indexPath.row].imageUrl)
+        let data = try? Data(contentsOf: url!)
+        chatListCell.imageView.image = UIImage(data: data!)
         
         return chatListCell
     }
