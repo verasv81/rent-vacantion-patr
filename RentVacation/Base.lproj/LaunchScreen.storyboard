@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,12 +15,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loading.gif" translatesAutoresizingMaskIntoConstraints="NO" id="ila-oq-8IR">
-                                <rect key="frame" x="0.0" y="326" width="414" height="269"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="splash-screen-2" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HMy-g9-oXc">
+                                <rect key="frame" x="20" y="44" width="374" height="552"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Rent Vacation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVn-nB-jPG">
+                                <rect key="frame" x="31" y="625" width="352" height="40"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spin.gif" translatesAutoresizingMaskIntoConstraints="NO" id="K1C-3Y-XwQ">
+                                <rect key="frame" x="180" y="706" width="54" height="54"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.1684760153" green="0.15695431830000001" blue="0.1490165591" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="K1C-3Y-XwQ" firstAttribute="top" secondItem="cVn-nB-jPG" secondAttribute="bottom" constant="41" id="2Fd-wD-v7A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="K1C-3Y-XwQ" secondAttribute="bottom" constant="102" id="2Um-1q-cSu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HMy-g9-oXc" secondAttribute="trailing" constant="20" id="66W-ND-XgV"/>
+                            <constraint firstItem="HMy-g9-oXc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7VP-ky-PNL"/>
+                            <constraint firstItem="HMy-g9-oXc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="I7x-ca-Uvb"/>
+                            <constraint firstItem="cVn-nB-jPG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="LrN-oh-4kP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cVn-nB-jPG" secondAttribute="bottom" constant="197" id="Mj2-x3-dfx"/>
+                            <constraint firstItem="K1C-3Y-XwQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="180" id="VcT-pj-v4Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K1C-3Y-XwQ" secondAttribute="trailing" constant="180" id="fMq-vR-z2O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cVn-nB-jPG" secondAttribute="trailing" constant="31" id="fag-6A-sii"/>
+                            <constraint firstItem="cVn-nB-jPG" firstAttribute="top" secondItem="HMy-g9-oXc" secondAttribute="bottom" constant="29" id="jfZ-qy-JCk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -30,6 +51,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="loading.gif" width="1920" height="1080"/>
+        <image name="spin.gif" width="200" height="200"/>
+        <image name="splash-screen-2" width="3109" height="4663"/>
     </resources>
 </document>

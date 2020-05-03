@@ -8,13 +8,12 @@
 
 import UIKit
 
-
 final class FeedCellModel {
     let description: String
-    let image: UIImage
+    let imageUrl: String
     
-    init(description: String, image: UIImage) {
+    init(description: String, imageUrl: String) {
         self.description = description;
-        self.image = image;
+        self.imageUrl = imageUrl;
     }
 }

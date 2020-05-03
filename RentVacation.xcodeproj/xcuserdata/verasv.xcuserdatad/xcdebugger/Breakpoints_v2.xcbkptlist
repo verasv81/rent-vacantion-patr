@@ -174,8 +174,8 @@
             filePath = "RentVacation/Account/Account.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -183,64 +183,255 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "72969495-EC2E-4F64-8978-4E6FCCC3C350"
+            uuid = "FE999ADC-4E09-43C2-A0A2-A9EBE5D3FFD0"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "RentVacation/Account/Account.swift"
+            filePath = "RentVacation/Presenters/FeedPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "getUser(id:)"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "feedDataFetch()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A31674E7-0F25-47A8-9861-9A680E3B7F37"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RentVacation/Presenters/AccountPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "setUser(id:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "72969495-EC2E-4F64-8978-4E6FCCC3C350 - a89ac518d2279aeb"
+                  uuid = "A31674E7-0F25-47A8-9861-9A680E3B7F37 - 434487634e147e1e"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (RxSwift.Event&lt;RentVacation.User&gt;) -&gt; () in RentVacation.AccountViewController.getUser() -&gt; ()"
+                  symbolName = "closure #1 (RxSwift.Event&lt;RentVacation.User&gt;) -&gt; () in RentVacation.AccountPresenter.setUser(id: Swift.String) -&gt; ()"
                   moduleName = "RentVacation"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/verasv/Desktop/RentVacation/RentVacation/Account/Account.swift"
+                  urlString = "file:///Users/verasv/docs/UTM%20stuff/3rd%20year/Mobile%20App/RentVacation/RentVacation/Presenters/AccountPresenter.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "77"
-                  endingLineNumber = "77"
-                  offsetFromSymbolStart = "48">
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "82">
                </Location>
                <Location
-                  uuid = "72969495-EC2E-4F64-8978-4E6FCCC3C350 - a89ac518d2279aeb"
+                  uuid = "A31674E7-0F25-47A8-9861-9A680E3B7F37 - 434487634e147e1e"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (RxSwift.Event&lt;RentVacation.User&gt;) -&gt; () in RentVacation.AccountViewController.getUser() -&gt; ()"
+                  symbolName = "closure #1 (RxSwift.Event&lt;RentVacation.User&gt;) -&gt; () in RentVacation.AccountPresenter.setUser(id: Swift.String) -&gt; ()"
                   moduleName = "RentVacation"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/verasv/Desktop/RentVacation/RentVacation/Account/Account.swift"
+                  urlString = "file:///Users/verasv/docs/UTM%20stuff/3rd%20year/Mobile%20App/RentVacation/RentVacation/Presenters/AccountPresenter.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "77"
-                  endingLineNumber = "77"
-                  offsetFromSymbolStart = "125">
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "135">
                </Location>
                <Location
-                  uuid = "72969495-EC2E-4F64-8978-4E6FCCC3C350 - a89ac518d2279aeb"
+                  uuid = "A31674E7-0F25-47A8-9861-9A680E3B7F37 - 434487634e147e1e"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (RxSwift.Event&lt;RentVacation.User&gt;) -&gt; () in RentVacation.AccountViewController.getUser() -&gt; ()"
+                  symbolName = "closure #1 (RxSwift.Event&lt;RentVacation.User&gt;) -&gt; () in RentVacation.AccountPresenter.setUser(id: Swift.String) -&gt; ()"
                   moduleName = "RentVacation"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/verasv/Desktop/RentVacation/RentVacation/Account/Account.swift"
+                  urlString = "file:///Users/verasv/docs/UTM%20stuff/3rd%20year/Mobile%20App/RentVacation/RentVacation/Presenters/AccountPresenter.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "77"
-                  endingLineNumber = "77"
-                  offsetFromSymbolStart = "374">
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "310">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DD8DD394-6B31-4844-A381-7EABE6698C24"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RentVacation/Presenters/AccountPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "setUser(id:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DD8DD394-6B31-4844-A381-7EABE6698C24 - 434487634e147e1e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RxSwift.Event&lt;RentVacation.User&gt;) -&gt; () in RentVacation.AccountPresenter.setUser(id: Swift.String) -&gt; ()"
+                  moduleName = "RentVacation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/verasv/docs/UTM%20stuff/3rd%20year/Mobile%20App/RentVacation/RentVacation/Presenters/AccountPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "82">
+               </Location>
+               <Location
+                  uuid = "DD8DD394-6B31-4844-A381-7EABE6698C24 - 434487634e147e1e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RxSwift.Event&lt;RentVacation.User&gt;) -&gt; () in RentVacation.AccountPresenter.setUser(id: Swift.String) -&gt; ()"
+                  moduleName = "RentVacation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/verasv/docs/UTM%20stuff/3rd%20year/Mobile%20App/RentVacation/RentVacation/Presenters/AccountPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "135">
+               </Location>
+               <Location
+                  uuid = "DD8DD394-6B31-4844-A381-7EABE6698C24 - 434487634e147e1e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RxSwift.Event&lt;RentVacation.User&gt;) -&gt; () in RentVacation.AccountPresenter.setUser(id: Swift.String) -&gt; ()"
+                  moduleName = "RentVacation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/verasv/docs/UTM%20stuff/3rd%20year/Mobile%20App/RentVacation/RentVacation/Presenters/AccountPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "310">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1126894D-3234-4B89-A41A-92B4C84CCB63"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RentVacation/Presenters/AccountPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "login(name:password:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1126894D-3234-4B89-A41A-92B4C84CCB63 - 1b2661d0888befbc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RentVacation.AccountPresenter.login(name: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "RentVacation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/verasv/docs/UTM%20stuff/3rd%20year/Mobile%20App/RentVacation/RentVacation/Presenters/AccountPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "1126894D-3234-4B89-A41A-92B4C84CCB63 - 222d6b9afba82334"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RxSwift.Event&lt;RentVacation.User&gt;) -&gt; () in RentVacation.AccountPresenter.login(name: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "RentVacation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/verasv/docs/UTM%20stuff/3rd%20year/Mobile%20App/RentVacation/RentVacation/Presenters/AccountPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "63">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "646FBD24-F342-4495-9D8F-133072018B09"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RentVacation/Presenters/AccountPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "signup(name:password:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "646FBD24-F342-4495-9D8F-133072018B09 - c62ad110255be53e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RentVacation.AccountPresenter.signup(name: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "RentVacation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/verasv/docs/UTM%20stuff/3rd%20year/Mobile%20App/RentVacation/RentVacation/Presenters/AccountPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "646FBD24-F342-4495-9D8F-133072018B09 - 347234cf2913432c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RxSwift.Event&lt;RentVacation.User&gt;) -&gt; () in RentVacation.AccountPresenter.signup(name: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "RentVacation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/verasv/docs/UTM%20stuff/3rd%20year/Mobile%20App/RentVacation/RentVacation/Presenters/AccountPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "63">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D842FE7F-6735-4ACD-9EAC-102C8F546B73"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RentVacation/Presenters/AccountPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "signup(name:password:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

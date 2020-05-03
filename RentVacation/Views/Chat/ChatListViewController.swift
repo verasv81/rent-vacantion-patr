@@ -14,7 +14,7 @@ final class ChatListViewController: UIViewController {
     
     let dataSource = Array(repeating: ChatListModel(author: "John Doe",
                                                     message: "Hello, I am very happy to see you.",
-                                                    avatarUrl: "plant.png"),
+                                                    avatarUrl: "account.png"),
                            count: 30)
     
     static var identifier: String {
@@ -45,7 +45,7 @@ extension ChatListViewController: UICollectionViewDataSource, UICollectionViewDe
         chatListCell.authorLabel.text = dataSource[indexPath.row].author;
         chatListCell.messageLabel.text = dataSource[indexPath.row].message;
         chatListCell.avatarImage.image = UIImage(named: dataSource[indexPath.row].avatarUrl);
-//        chatListCell.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tap(_:))))
+
         return chatListCell
     }
     
